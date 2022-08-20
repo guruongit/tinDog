@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!--Bootstrap is a front end library. Its basically a buch of code pre written for developers to use for developing new.
+    Developed by twitter.
+    A website should need to be responsive. Responsive means it perfectly response to viewport. Provides adabtable layouts.
+    It also provide prestyled elements.
+    Use codespy for testing.
+    Bootstrap is similar to agent css for default browser. It includes various selectors and classes for everything as a CSS file.
+    Also they provide examples for extensive styling in theie website.
+
+-->
+<!--Installing Bootstrap
+    CDN - content delivery network -> This provides multiple hosting for same website or conections using a link, to provide fast transmition.
+    1. Installing using link, just link the bootstrap file using href css.
+    2. To use all functions and complete bootstrap, install starter template to it. It also includes little javascripts for some specific functionality. It will reduces complexity due to chaching via link. 
+    3. by sinpling downloading all files of bootstrap. But it will cause slow loading, as these files can't be chached.
+-->
+<!--Wireframing
+    Is designing website before writting any code. like asrchitechure for building.
+    Mockup -> is high fitalitym representation app or website.
+        making a mockup can confuse u and stuck your workflow. To avoid that you can check different websites layout on awwards. and ui paterns in ui-patterns.com.
+        using above you can start building a wireframe then mockup. and finally a protype taking motivation from dribble.
+    Easiest way to create a wireframe is using pen and paper.
+        Use sneakpeekit website, to get templates and download them to make wireframes.
+    Advance tool for wireframing is balsamiq.cloud for easy sharing and wireframing.
+    
+-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bootstrap</title>
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="css/bootstyles.css">
+
+    </head>
+    <body>
+        <h1>Hello world</h1>
+    </body>
+</html>
+
+<!--Bootstrap grid layout system
+    As screen size of view port in terms of columns is 12, col-6 will be half of view port.
+    if in a row class,there are multiple col classes then, each class will take equal distributed width.
+        but these are non responsive.
+    responsive grid, can be make by class= "col-md-6", it will only take multiple column when there are appropraite space mean more than 6.
+        If there is less then, following columns, will be listed below.
+    class = col-lg-3 col=-md-4 col-sm-
+        In this, lg->represents pc large width screen, md-> represents tablet medium width screen.
+        sm -> represents mobile small width screens.
+        
+    
+-->
+<div class="row">
+    <div class="col" style="background-color:red; border:1px solid;">
+        col
+    </div>
+    <div class="col" style="background-color:red; border:1px solid;">
+        col
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6" style="background-color:green; border:1px solid;">
+        col-6
+    </div>
+    <div class="col-6" style="background-color:green; border:1px solid;">
+        col-6
+    </div>
+    
+</div>
+
+<div class="row">
+    <div class="col-md-6" style="background-color:yellow; border:1px solid;">
+        col-6
+    </div>
+    <div class="col-md-6" style="background-color:yellow; border:1px solid;">
+        col-6
+    </div>
+    
+</div>
+<div class="row">
+
+    <div class="col-lg-3 col=-md-4 col-sm-6" style="background-color:blue; border:1px solid;">
+        col-lg-3 col=-md-4 col-sm-6
+    </div>
+    <div class="col-lg-3 col=-md-4 col-sm-6" style="background-color:blue; border:1px solid;">
+        col-lg-3 col=-md-4 col-sm-6
+    </div>
+    <div class="col-lg-3 col=-md-4 col-sm-6" style="background-color:blue; border:1px solid;">
+        col-lg-3 col=-md-4 col-sm-6
+    </div>
+    <div class="col-lg-3 col=-md-4 col-sm-6" style="background-color:blue; border:1px solid;">
+        col-lg-3 col=-md-4 col-sm-6
+    </div>
+    
+</div>
+<div class="row">
+
+    <div class="col-lg-2 col-md-3 col-sm-6" style="background-color:orange; border:1px solid;">
+        col-lg-2 col-md-3 col-sm-6
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-6" style="background-color:orange; border:1px solid;">
+        col-lg-2 col-md-3 col-sm-6
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-6" style="background-color:orange; border:1px solid;">
+        col-lg-2 col-md-3 col-sm-6
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-6" style="background-color:orange; border:1px solid;">
+        col-lg-2 col-md-3 col-sm-6
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-6" style="background-color:orange; border:1px solid;">
+        col-lg-2 col-md-3 col-sm-6
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-6" style="background-color:orange; border:1px solid;">
+        col-lg-2 col-md-3 col-sm-6
+    </div>
+    
+    
+</div>
+
+<!--Container
+    A basic building block for a alot of components of bootstrap. It required while using our grid system.
+        It provides a responsive width. 
+        A container-fluid is used for contious width length.
+
+-->
+
+
+<div class="container" style="background-color:red;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+<div class="container-fluid" style="background-color:green;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+
+<!--Bootstrap buttons and Font awesome
+    colour names of button -> ex. "btn btn-primary"
+        Primary- blue, Secondary- grey, Success- green, Danger- Red, Warning-yellow, info- sky, ligh-goodwhite, dark-black, link-no background blue tex.
+    Outline button -> ex. "btn btn-outline-primary" 
+        are bottons with white background, and colored border plus text
+    
+    Fontawesome.com is site to download text icon, like img for text download.
+        To use fontawesome, add its CDN to head section of your website.
+        change size by adding class "fa-4x"
+
+    Text color-> #fff - > white, #000 ->black, grey ->#8f8f8f
+    
+-->
+
+<i class="fa-solid fa-circle-check fa-4x"></i>
+<i class="fa-solid fa-bullseye"></i>
+<i class="fa-solid fa-heart"></i>
+
+
+<!--Transform: Rotate Function
+    Used to rotate elements.
+-->
+<hr>
+<div class="divrot">Normal</div>
+<div class="rotated divrot">Rotated</div>
+
+
+<!--Bootstrap Carousel
+    Gonna create a slide show in the web page.
+    ariar-hidden -> this for blind persons, it will used to read out.
+-->
+<hr>
+<div id="testimonial-carousel" class="carousel slide" data-bs-ride="false" >
+    <div class="carousel-inner" >
+      <div class="carousel-item active" style="background-color: red;">
+        <img src="..." class="d-block w-100" alt="first slide">
+      </div>
+      <div class="carousel-item" style="background-color: yellow;">
+        <img src="..." class="d-block w-100" alt="second slide">
+      </div>
+      <div class="carousel-item" style="background-color: blue;">
+        <img src="..." class="d-block w-100" alt="third slide">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    
+    </button>
+</div>
+
+<!--Pricing Cards - Can use bootsnip for more examples-->
+<!--Bottstrap example pricing-->
+<hr>
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Free</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>10 users included</li>
+            <li>2 GB of storage</li>
+            <li>Email support</li>
+            <li>Help center access</li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Pro</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>20 users included</li>
+            <li>10 GB of storage</li>
+            <li>Priority email support</li>
+            <li>Help center access</li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm border-primary">
+        <div class="card-header py-3 text-white bg-primary border-primary">
+          <h4 class="my-0 fw-normal">Enterprise</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>30 users included</li>
+            <li>15 GB of storage</li>
+            <li>Phone and email support</li>
+            <li>Help center access</li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--custom-->
+<hr>
+<div class="card">
+    <div class="card-header">
+        Card header
+    </div>
+    <div class="card-body">
+        Card Body
+    </div>
+</div>
+
+<!--CSS Z-index and stacking order
+    all elements have all three x,y,z indexes.
+    Stacking order is-> order of apperence in depth as per z index or order of elements in code. z index is one of the way to change stacking order.
+    to follow staking order all elements should given position property:absolute
+
+
+
+-->
+<hr>
+<img style="width: 100%;" src="images/flowchart zindex.png" alt="">
+<hr>
+
+<div class="zind reda">
+    Red
+</div>
+<div class="zind yellowa">
+    yellow    
+</div>
+<div class="zind bluea">
+    Blue
+</div>
+
+<!--Media Query Breakpoint
+    Its a CSS native functionality.
+    Media Query structure: 
+        @media <type> <feature>. ex - @media speed{}, common types - print screen.
+
+-->
+<hr>
+<h1 class="MediaQhead">Hello World</h1>
+
+<!--Code Refactoring
+    1. Readability
+    2. Modularity - How easy to use same thinks.
+    3. Efficiency
+    4. length // Means to optimising// Not by making it less readable
+
+
+-->
+
+<!-- Advanced CSS
+    Always read from  right to left.
+    Mutiple Selectors -
+        selector1, selector2{ properties:;        }
+    
+    Hierarchical selectors-
+        selector1 selector2{ properties:; }
+        here selector1 is the parent of selector 2. Selector can be class, id, or primary selector.
+        Child and parent relation should need to be valid.
+
+    Combined selector -
+        selector1selector2{ properties:;}
+        selector2 with selector1 will change.
+        It means element should have both the selctors.
+
+
+
+--> 
+
+<!-- Selector priority
+    In any selector, its properties are read from top to bottom, and bottom one are considered over above for same property.
+    classes have more priority than normal selectors. id have more than class.
+    Inline codes have more priorities than anything even id's.
+    avoid inline tho.
+
+
+-->
+<hr>
+<h1 id = "spheading" class = "sptitle">Hello World</h1>
+<h1 id = "spheading" class = "sptitle" style ="color:burlywood;" >Hello World</h1>
+
+
+    

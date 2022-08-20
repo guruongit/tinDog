@@ -1,0 +1,52 @@
+.divrot{
+    width: 80px;
+    height: 80px;
+    background-color: skyblue;
+}
+.rotated {
+    transform: rotate(45deg); /* Equal to rotateZ(45deg) */
+    background-color: pink;
+}
+.carousel-item{
+    height: 500px;
+}
+
+.zind{
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    position: absolute;
+}
+.reda{
+    background-color: red;
+    
+}
+.yellowa{
+    background-color: yellow;
+    left: 40px; top: 40px;
+    
+    
+}
+.bluea{
+    background-color: blue;
+    left: 20px; top:20px;
+    position: relative;
+}
+
+@media (min-width: 900px) and (max-width:1000px){
+    .MediaQhead{
+        font-size: 200px;   
+    }
+}
+
+h1{
+    color: red;
+    color: orange;
+}
+.sptitle{
+    color: green;
+}
+#spheading{
+    color: turquoise;
+}
+
